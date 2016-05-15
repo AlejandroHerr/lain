@@ -42,6 +42,7 @@ function brightness:notifier()
     brightness.notification = naughty.notify({
         text = msg,
         timeout = 5,
+        font = beautiful.notification.presets.brightness.font,
         replaces_id = brightness.notification.id
     })
 end
